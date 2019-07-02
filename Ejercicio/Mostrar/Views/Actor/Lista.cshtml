@@ -1,0 +1,43 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista</title>
+</head>
+<body>
+    <div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id Actor</th>
+                        <th>Nombre</th>
+
+                        <th>Apellido</th>
+                        <th>Actualizacion</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var act in ViewBag.Lista)
+                    {
+                        <tr>
+                            <td>@act.actor_id</td>
+                            <td>@act.first_name</td>
+                            <td>@act.last_name</td>
+                            <td>@act.last_update</td>
+
+                        </tr>}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

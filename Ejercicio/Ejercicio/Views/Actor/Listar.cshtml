@@ -1,0 +1,41 @@
+﻿@using Ejercicio.DAL;
+@using Ejercicio.EF;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listar</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Actor</th>
+                    <th>Nombre</th>
+
+                    <th>Apellido</th>
+                    <th>Actualizacion</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (actor item in (List<actor>)ViewData["actor"])
+                {
+                <tr>
+                    <td>@item.actor_id</td>
+                    <td>@item.first_name</td>
+                    <td>@item.last_name</td>
+                    <td>@item.last_update</td>
+
+                </tr>}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
