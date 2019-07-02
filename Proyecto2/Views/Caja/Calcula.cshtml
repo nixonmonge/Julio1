@@ -1,0 +1,26 @@
+﻿@model Proyecto2.ServiceReference1.Caja
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calcula</title>
+</head>
+<body>
+    <div> <form method="post">
+    Alto:<input type=" text" name="Alto" value="@Model.Alto" /><br />
+    Ancho:<input type=" text" name="Ancho" value="@Model.Ancho" /><br />
+    Largo:<input type=" text" name="Largo" value="@Model.Largo" /><br />
+        <input type="submit" name="Calcular"/> <br />
+        La Suma es @ViewBag.total
+
+
+
+</form>
+    </div>
+</body>
+</html>
