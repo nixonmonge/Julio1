@@ -11,7 +11,7 @@ namespace Mostrar.Controllers
 {
     public class ActorController : Controller
     {
-        // GET: Actor
+        // GET: Actor // tener en cuenta al momento de crear las View //
         public ActionResult Lista()
         { 
             var lista = new List<actor>();
